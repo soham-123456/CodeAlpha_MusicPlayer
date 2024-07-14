@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Musify</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+	<div class="main">
+		<div class="progress_bar" id="Bar"></div>
+		<img src="img4.jpg" alt="" id="bg">
+
+		<!-- navbar part -->
+		<div class="navbar">
+			<a href="#" id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Musify</a>
+            <a onclick="open_close_menu()" id="responsive_menu"><i class='bx bxs-chevron-down' ></i></a>
+
+			<div class="nav_content">
+                <li><a href="#bio">Biography</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#merchandise">Merchandise</a></li>
+			</div>
+
+            <a onclick="menu_action()" id="menu_btn"><i class='bx bx-menu-alt-left'></i></a>
+		</div>
+        <div class="mid_part">
+            <img src="img/img7.jpg" alt="">
+
+			<div class="description">
+				<p id="A_name">SONU NIGAM</p>
+				<p>Musician - Singer</p>
+				<br>
+				<div class="author_desc">
+				   <p>I want to enjoy not getting recognised while it lasts. But the mask is a symbol of unity.</p>
+				</div>
+
+                 <div class="buttons">
+				   <button><i class='bx bxs-like' ></i></button>
+				   <button><i class='bx bx-share-alt'></i></button>
+				   <button><i class='bx bx-bookmark-alt'></i></button>
+                 </div>
+
+			</div>
+		</div>
+        <div class="top_tracks" id="top_tracks">
+			<p id="heading"><i class='bx bxs-playlist'></i>&nbsp;&nbsp;Music</p>
+			<div id="track"></div>
+
+			<div id="track">
+				<img src="sonuimg/simg2.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="sonusong/spotifydown.com - Abhi Mujh Mein Kahin.mp3" id="music"></audio>
+			
+				<div id="song_desc">
+					<p>Abhi Mujh Mein Kahin</p>
+				   <p>SONU NIGAM</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;200k+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="1.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+			
+			<div id="track">
+				<img src="sonuimg/simg3.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+
+				<audio src="sonusong/spotifydown.com - Kal Ho Naa Ho.mp3" id="music"></audio>
+
+				<div id="song_desc">
+				   <p>Kal Ho Naa Ho</p>
+				   <p>SONU NIGAM</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;150k+</p>
+				</div>
+				<div id="actions_2">
+				  <p><a href="#"><i class='bx bx-share' ></i></a></p>
+				  <p><a href="2.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="sonuimg/simg4.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="sonusong/spotifydown.com - Main Agar Kahoon.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Main Agar Kahoon</p>
+				     <p>SONU NIGAM</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;100k+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="3.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="sonuimg/simg5.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="sonusong/spotifydown.com - Sapna Jahan (From _Brothers_).mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Sapna Jahan (From _Brothers_)</p>
+				     <p>SONU NIGAM</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;175k+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="4.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="sonuimg/sonuimg1.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="sonusong/spotifydown.com - Tumse Milke Dil Ka.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Tumse Milke Dil ka</p>
+				     <p>SONU NIGAM</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;100k+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="footer">
+		   <a id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Musify</a>
+		   <div class="social_handle">
+			   <i class='bx bxl-twitter' ></i>
+			   <i class='bx bxl-twitch'></i>
+			   <i class='bx bxl-github' ></i>
+		   </div>
+	   </div>
+
+   </div>
+
+
+  <!--javascript file -->
+ <script src="main.js"></script> 
+</body>
+</html>
